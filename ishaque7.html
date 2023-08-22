@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Enter the Numbers</h1>
+    <br>
+    <input type="number" id="inp1" placeholder="First Number">
+    <br>
+    <input type="number" id="inp2" placeholder="Second Number">
+    <br>
+    <button onclick="add()">Add</button>
+    <button onclick="sub()">Sub</button>
+    <button onclick="Mul()">Mul</button>
+    <button onclick="div()">Div</button>
+    <p id="ans"></p>
+    <script>
+        function add(){
+            var a =parseInt(document.getElementById("inp1").value)
+            var b =parseInt(document.getElementById("inp2").value)
+            var c=a+b;
+            document.getElementById("ans").innerHTML="Result is"+ c
+        }
+        function sub(){
+            var a =parseInt(document.getElementById("inp1").value)
+            var b =parseInt(document.getElementById("inp2").value)
+            var c=a-b;
+            document.getElementById("ans").innerHTML="Result is"+ c
+        }
+        function Mul(){
+            var a =parseInt(document.getElementById("inp1").value)
+            var b =parseInt(document.getElementById("inp2").value)
+            var c=a*b;
+            document.getElementById("ans").innerHTML="Result is"+ c
+        }
+        function div(){
+            var a =parseInt(document.getElementById("inp1").value)
+            var b =parseInt(document.getElementById("inp2").value)
+            var c=a/b;
+            document.getElementById("ans").innerHTML="Result is"+ c
+        }
+    </script>
+</body>
+</html>
